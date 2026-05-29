@@ -10,7 +10,7 @@ function Home() {
       <ul className="flex flex-col gap-2 *:flex *:gap-2 *:font-mono">
         <li>
           <IconMail />
-          <a href="mailto:s@intsuc.dev">s@intsuc.dev</a>
+          <a href="mailto:i@intsuc.dev">i@intsuc.dev</a>
         </li>
         <li>
           <IconBrandGithub />
