@@ -12,3 +12,43 @@
     @apply bg-[#0f0f0f] text-[#efefef]
   }
 }
+
+@layer components {
+  .markdown-content {
+    @apply leading-8 text-[#efefef];
+  }
+
+  .markdown-content h1 {
+    @apply mt-12 mb-4 text-3xl;
+  }
+
+  .markdown-content h2 {
+    @apply mt-10 mb-3 text-2xl;
+  }
+
+  .markdown-content h3 {
+    @apply mt-8 mb-3 text-xl;
+  }
+
+  .markdown-content p,
+  .markdown-content ul,
+  .markdown-content pre {
+    @apply my-5;
+  }
+
+  .markdown-content ul {
+    @apply list-disc pl-6;
+  }
+
+  .markdown-content a {
+    @apply underline underline-offset-4;
+  }
+
+  .markdown-content code {
+    @apply font-mono text-sm;
+  }
+
+  .markdown-content pre {
+    @apply overflow-x-auto bg-[#1c1c1c] p-4;
+  }
+}

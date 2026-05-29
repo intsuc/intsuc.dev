@@ -5,22 +5,22 @@ export const Route = createFileRoute("/")({ component: Home })
 
 function Home() {
   return (
-    <div className="m-16 w-min flex flex-col gap-4">
-      <span className="text-4xl font-mono">intsuc</span>
-      <div className="flex flex-col gap-2 *:flex *:gap-2 *:font-mono">
-        <div>
+    <main className="m-8 sm:m-16 w-min flex flex-col gap-8">
+      <h1 className="text-4xl font-mono">intsuc</h1>
+      <ul className="flex flex-col gap-2 *:flex *:gap-2 *:font-mono">
+        <li>
           <IconMail />
           <a href="mailto:s@intsuc.dev">s@intsuc.dev</a>
-        </div>
-        <div>
+        </li>
+        <li>
           <IconBrandGithub />
           <a href="https://github.com/intsuc">intsuc</a>
-        </div>
-        <div>
+        </li>
+        <li>
           <IconBrandX />
           <a href="https://x.com/intsuc">@intsuc</a>
-        </div>
-      </div>
-    </div>
+        </li>
+      </ul>
+    </main>
   )
 }
