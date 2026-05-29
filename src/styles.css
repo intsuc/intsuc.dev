@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import "@fontsource/klee-one";
+@import "@fontsource/iosevka-etoile";
+
+@theme {
+  --font-sans: "Klee One", sans-serif;
+  --font-mono: "Iosevka Etoile", monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0f0f0f] text-[#efefef]
+  }
+}

@@ -1,0 +1,6 @@
+.env
+*.local
+/.tanstack/
+/.wrangler/
+/dist/
+/node_modules/
