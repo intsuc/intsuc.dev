@@ -32,6 +32,7 @@ export const Route = createRootRoute({
     ],
   }),
   shellComponent: RootDocument,
+  notFoundComponent: NotFound,
 })
 
 function RootDocument({ children }: { children: React.ReactNode }) {
@@ -70,5 +71,13 @@ function Header() {
         blog
       </Link>
     </nav>
+  )
+}
+
+function NotFound() {
+  return (
+    <main className="m-8 sm:m-16 w-min flex flex-col gap-8">
+      <h1 className="whitespace-pre text-4xl font-mono">not found</h1>
+    </main>
   )
 }
