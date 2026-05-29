@@ -1,4 +1,4 @@
-import { HeadContent, Scripts, createRootRoute } from "@tanstack/react-router"
+import { HeadContent, Link, Scripts, createRootRoute } from "@tanstack/react-router"
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools"
 import { TanStackDevtools } from "@tanstack/react-devtools"
 
@@ -41,6 +41,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <HeadContent />
       </head>
       <body>
+        <Header />
         {children}
         <TanStackDevtools
           config={{
@@ -56,5 +57,18 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <Scripts />
       </body>
     </html>
+  )
+}
+
+function Header() {
+  return (
+    <nav className="top-0 sticky flex font-mono bg-[#0f0f0f] text-[#bdbdbd] border-b border-[#efefef] *:px-4 *:py-2 *:border-r">
+      <Link to="/">
+        intsuc
+      </Link>
+      <Link to="/blog">
+        blog
+      </Link>
+    </nav>
   )
 }

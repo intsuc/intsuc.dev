@@ -1,4 +1,4 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router"
+import { createFileRoute, notFound } from "@tanstack/react-router"
 import { getBlogPost } from "#/utils/blog"
 import { renderMarkdown } from "#/utils/markdown"
 
@@ -20,9 +20,6 @@ function BlogPost() {
 
   return (
     <main className="m-8 max-w-3xl sm:m-16">
-      <Link className="font-mono text-sm text-[#bdbdbd] hover:text-[#efefef]" to="/blog">
-        blog
-      </Link>
       <article className="mt-8">
         <header className="mb-10">
           <time className="mt-3 block font-mono text-sm text-[#bdbdbd]" dateTime={post.date}>

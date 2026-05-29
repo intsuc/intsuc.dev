@@ -14,8 +14,8 @@ export function BlogIndex() {
   const posts = Route.useLoaderData()
 
   return (
-    <main className="m-8 max-w-2xl sm:m-16">
-      <h1 className="mb-8 font-mono text-4xl">blog</h1>
+    <main className="m-8 max-w-2xl sm:m-16 flex flex-col gap-8">
+      <h1 className="font-mono text-4xl">blog</h1>
       <ul className="flex flex-col gap-4">
         {posts.map((post) => (
           <li key={post.date}>
@@ -28,7 +28,7 @@ export function BlogIndex() {
                 day: post.day,
               }}
             >
-              <time className="font-mono text-sm text-[#bdbdbd]" dateTime={post.date}>
+              <time className="font-mono text-[#bdbdbd]" dateTime={post.date}>
                 {post.date}
               </time>
               <span className="text-xl">{post.title}</span>
