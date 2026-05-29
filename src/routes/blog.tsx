@@ -28,7 +28,7 @@ export function BlogIndex() {
                 day: post.day,
               }}
             >
-              <time className="font-mono text-[#bdbdbd]" dateTime={post.date}>
+              <time className="font-mono text-sm text-[#bdbdbd]" dateTime={post.date}>
                 {post.date}
               </time>
               <span className="text-xl">{post.title}</span>
